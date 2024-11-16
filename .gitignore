@@ -1,0 +1,61 @@
+# Игнорирование виртуальных окружений
+venv/
+env/
+
+# Игнорирование файлов, создаваемых операционными системами
+.DS_Store
+Thumbs.db
+
+# Игнорирование кэш-файлов Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Игнорирование файлов IDE и редакторов
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Файлы, связанные с Jupyter Notebook
+.ipynb_checkpoints/
+
+# Конфиденциальные данные
+*.env
+.env.*
+
+# Файлы миграций Django (при необходимости)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Статические и медиафайлы
+/static/
+!/static/.gitkeep
+/media/
+!/media/.gitkeep
+
+# Игнорирование пакетов и сборки
+*.egg
+*.egg-info/
+dist/
+build/
+*.wheel
+
+# Тестовые покрытия и отладочные файлы
+.coverage
+.tox/
+*.prof
+htmlcov/
+
+# Celery и другие временные файлы
+celerybeat-schedule
+*.pid
