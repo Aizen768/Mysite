@@ -1,6 +1,9 @@
 from django.db import models
 
 
+
+
+
 class News(models.Model):
     image = models.ImageField(null=True, blank=True, verbose_name= 'Изображение')
     title = models.CharField(null=True, blank=True, max_length=100, verbose_name= 'Название')
@@ -9,4 +12,4 @@ class News(models.Model):
     class Meta:
         verbose_name = 'Новость'
         verbose_name_plural = 'Новости'
-          
+             
